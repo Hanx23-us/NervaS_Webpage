@@ -4,349 +4,179 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NervaS - Plataforma de Aprendizaje</title>
-      <link rel="stylesheet" href="Main.css">
+      <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <nav>
-        <div class="logo">Nerva<span class="s">S</span></div>
-        <ul>
-            <li><a href="Main.html">Inicio</a></li>
-            <li><a href="about.html">Nosotros</a></li>
-            <li><a href="cursos.html">Cursos</a></li>
-            <li><a href="#" class="nav-cta">Iniciar Sesión</a></li>
-        </ul>
-    </nav>
-
-    <section id="home" class="hero">
-        <div class="hero-content">
-            <div>
-                <h1>Descubre tus habilidades de hacker</h1>
-                <p>Aprende habilidades demandadas en el mercado con cursos diseñados por expertos. Educación de calidad accesible para todos.</p>
-                <div class="hero-buttons">
-                    <a href="#courses" class="btn-primary">Explorar Cursos</a>
-                    <a href="#about" class="btn-secondary">Conocer Más</a>
-                </div>
-            </div>
-            <div class="hero-image">
-                <div class="hero-visual">
-                    <div class="hero-visual-content">🎓</div>
-                </div>
-            </div>
+     <nav>
+    <div class="logo">
+      <img src="images/Nervas_logo.png" alt="Logo" style="transform: scale(0.8);" />
+    </div>
+    <ul class="nav-links">
+      <li><a href="Main.html">Inicio</a></li>
+      <li><a href="about.html">Nosotros</a></li>
+      <li><a href="cursos.html">Aprendizaje</a></li>
+      <li><a href="#">Iniciar Sesión</a></li>
+    </ul>
+  </nav>
+     <section id="home">
+    <div class="home-content">
+      <div class="text-box">
+        <h1>Descubre tus habilidades de hacker</h1>
+        <p>Aprende habilidades demandadas en el mercado con cursos diseñados por expertos. Educación de calidad accesible para todos.</p>
+        <div class="cta-buttons">
+          <a href="#courses" class="btn">Explorar Cursos</a>
+          <a href="#about" class="btn secondary">Conocer Más</a>
         </div>
-    </section>
+      </div>
+      <!--<div class="icon-box">
+        <div class="icon">🎓</div>
+      </div>-->
+    </div>
+  </section>
+</body>
+</html>
 
     <section id="about">
-        <div class="section-container">
-            <h2>Sobre NervaS</h2>
-            <p class="section-subtitle">"For students by Students"</p>
-            
-            <!-- Quiénes Somos -->
-            <div class="about-section">
-                <div class="about-card">
-                    <div class="about-icon" style="background: #50c878;"></div>
-                    <h3>¿Quiénes Somos?</h3>
-                    <p>NervaS es una plataforma de aprendizaje en línea comprometida con proporcionar educación accesible y de calidad. Trabajamos con instructores expertos de la industria para crear contenido actualizado y práctico que impulse tu carrera profesional.</p>
-                </div>
-            </div>
-
-           <!-- Misión, Visión, Valores (HTML + CSS) -->
-<section class="mvv-section" aria-labelledby="mvv-title">
-  <h2 id="mvv-title">Nuestra misión</h2>
-
-  <div class="mvv-flow">
-    <!-- Flechas SVG de conexión -->
-    <svg class="mvv-arrows" viewBox="0 0 1200 300" preserveAspectRatio="none" aria-hidden="true">
-      <!-- Flecha entre Misión y Visión -->
-      <defs>
-        <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto">
-          <path d="M0,0 L10,5 L0,10 Z" fill="#cfd8dc"></path>
-        </marker>
-      </defs>
-      <line x1="240" y1="150" x2="600" y2="150" stroke="#cfd8dc" stroke-width="4" marker-end="url(#arrow)" />
-      <!-- Flecha entre Visión y Valores -->
-      <line x1="600" y1="150" x2="960" y2="150" stroke="#cfd8dc" stroke-width="4" marker-end="url(#arrow)" />
-    </svg>
-
-    <div class="mvv-grid">
-      <!-- Misión -->
-      <article class="mvv-card" role="group" aria-label="Misión">
-        <div class="mvv-circle">
-          <div class="mvv-icon" aria-hidden="true">
-            <!-- Reemplaza por tu imagen: <img src="images/mision.png" alt="" /> -->
-            <svg viewBox="0 0 24 24" class="icon">
-              <path fill="currentColor" d="M9 21h6v-2H9v2m3-19C7.69 2 5 4.69 5 8c0 2.38 1.19 4.46 3 5.74V16h8v-2.26c1.81-1.28 3-3.36 3-5.74 0-3.31-2.69-6-6-6Z"/>
-            </svg>
-          </div>
-          <h3>Misión</h3>
-          <p>Democratizar el acceso a educación de calidad mediante tecnología, ofreciendo cursos accesibles que empoderen a personas de todo el mundo a alcanzar sus metas profesionales y personales.</p>
-        </div>
-      </article>
-
-      <!-- Visión -->
-      <article class="mvv-card" role="group" aria-label="Visión">
-        <div class="mvv-circle">
-          <div class="mvv-icon" aria-hidden="true">
-            <svg viewBox="0 0 24 24" class="icon">
-              <path fill="currentColor" d="M12 8a4 4 0 1 0 0 8 4 4 0 0 0 0-8m0-6C7 2 2.73 5.11 1 10c1.73 4.89 6 8 11 8s9.27-3.11 11-8c-1.73-4.89-6-8-11-8Z"/>
-            </svg>
-          </div>
-          <h3>Visión</h3>
-          <p>Ser la plataforma de aprendizaje líder en Latinoamérica, reconocida por la excelencia de nuestros contenidos y el impacto positivo en la vida de nuestros estudiantes.</p>
-        </div>
-      </article>
-
-      <!-- Valores -->
-      <article class="mvv-card" role="group" aria-label="Valores">
-        <div class="mvv-circle">
-          <div class="mvv-icon" aria-hidden="true">
-            <svg viewBox="0 0 24 24" class="icon">
-              <path fill="currentColor" d="M12.1 18.55 11 17.5C6.14 13.36 3 10.5 3 7.5 3 5.5 4.5 4 6.5 4c1.54 0 3.04.99 3.57 2.36h.87C11.46 4.99 12.96 4 14.5 4 16.5 4 18 5.5 18 7.5c0 3-3.14 5.86-8 10l2.1 1.05Z"/>
-            </svg>
-          </div>
-          <h3>Valores</h3>
-          <ul class="values-list">
-            <li>✓ Excelencia educativa</li>
-            <li>✓ Innovación constante</li>
-            <li>✓ Accesibilidad para todos</li>
-            <li>✓ Comunidad colaborativa</li>
-            <li>✓ Integridad y transparencia</li>
-          </ul>
-        </div>
-      </article>
+  <div class="about-container">
+    <div class="about-image"></div>
+    <div class="about-text">
+      <h2>Sobre NervaS</h2>
+      <p class="tagline">"For students by Students"</p>
+      <h3>¿Quiénes Somos?</h3>
+      <p>
+        NervaS es un proyecto creado por estudiantes apasionados por la tecnología y la educación. Creemos en el poder de la educación para transformar vidas y carreras profesionales, iniciando desde nuestra propia institución hasta otros con las mismas ambiciones que nosotros.
+      </p>
     </div>
   </div>
 </section>
+  <section class="bottom-section">
+    <div class="bottom-card">
+      <div class="icon"><img src="images/mission.png" alt="Logo" /></div>
+      <div class="section-header-mission">
+      <h2>Nuestra Misión</h2>
+    </div>
+      <p class="text-m">Brindar a los estudiantes de ciberseguridad de nuestra institución acceso a una plataforma que les exponga a entornos simulados tan similares como posible a casos en la vida real.</p>
+    </div>
+    <div class="bottom-card">
+      <div class="icon"><img src="images/vission.png" alt="Logo" /></div>
+      <div class="section-header-vission">
+      <h2>Nuestra Visión</h2>
+    </div>
+      <p class="text-v">Ser una plataforma útil y beneficiosa para el desarrollo de los estudiantes de nuestra institución en materia de ciberseguridad.</p>
+    </div>
+    <div class="bottom-card">
+      <div class="icon"><img src="images/values.png" alt="Logo" /></div>
+      <div class="section-header-values">
+      <h2>Nuestros Valores</h2>
+    </div>
+      <p class="text-vv">· Excelencia educativa<br>· Innovación constante<br>· Accesibilidad para todos<br>· Conocimiento realista</p>
+    </div>
+  </section>
             <!-- Nuestro Equipo -->
-            <div class="team-section">
-                <h2>Nuestro Equipo</h2>
-                <p class="section-subtitle">Las mentes maestras detrás de NervaS</p>
-                
-                <div class="carousel-container">
-                    <button class="carousel-btn prev" onclick="moveCarousel(-1)">‹</button>
-                    <div class="carousel-wrapper">
-                        <div class="carousel-track" id="carouselTrack">
-                            <div class="team-card">
-                                <div class="team-photo" style="background: linear-gradient(135deg, #50c878, #359b57);">
-                                    <span class="team-initial">DA</span>
-                                </div>
-                                <h4>Dereck Araya</h4>
-                                <p class="team-role">CEO & Fundador</p>
-                                <p class="team-description">Mente astuta, el pionero de la idea.</p>
-                            </div>
-                            <div class="team-card">
-                                <div class="team-photo" style="background: linear-gradient(135deg, #fd6824, #ff8c5a);">
-                                    <span class="team-initial">FF</span>
-                                </div>
-                                <h4>Francesco Fallas</h4>
-                                <p class="team-role">Pentester</p>
-                                <p class="team-description">Amante del pentesting, motor del proyecto.</p>
-                            </div>
-                            <div class="team-card">
-                                <div class="team-photo" style="background: linear-gradient(135deg, #1f8689, #34d8dd);">
-                                    <span class="team-initial">RR</span>
-                                </div>
-                                <h4>Rebeca Rivera</h4>
-                                <p class="team-role">Desarrolladora Frontend y Backend</p>
-                                <p class="team-description">Diseñadora crativa, la mente del grupo.</p>
-                            </div>
-                            <div class="team-card">
-                                <div class="team-photo" style="background: linear-gradient(135deg, #ffd12c, #ffe066);">
-                                    <span class="team-initial">LG</span>
-                                </div>
-                                <h4>Luis F. Granados</h4>
-                                <p class="team-role">Líder del equipo</p>
-                                <p class="team-description"> Estratega hábil, apasionado por las TIC's</p>
-                            </div>
-                            <div class="team-card">
-                                <div class="team-photo" style="background: linear-gradient(135deg, #50c878, #8bc34a);">
-                                    <span class="team-initial">YM</span>
-                                </div>
-                                <h4>Yohann Mora</h4>
-                                <p class="team-role">Manager oficial</p>
-                                <p class="team-description">Astuto y perseverante, el del trabajo sucio.</p>
-                            </div>
-                            <div class="team-card">
-                                <div class="team-photo" style="background: linear-gradient(135deg, #34d8dd, #f8f9fa);">
-                                    <span class="team-initial">JG</span>
-                                </div>
-                                <h4>Jeslie Gonzáles</h4>
-                                <p class="team-role">Diseñadora frontend</p>
-                                <p class="team-description">Mente abierta, el visto bueno.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <button class="carousel-btn next" onclick="moveCarousel(1)">›</button>
-                </div>
-                <div class="carousel-dots" id="carouselDots"></div>
-            </div>
-        </div>
+        <section class="destinations" style="align-content: center !important;">
+  <h2>Nuestros Integrantes</h2>
+  <div class="card-carousel">
+    <div class="card">
+      <img src="/images/cappadocia.jpg" alt="Cappadocia - Turkey">
+      <div class="card-text">
+        <h3 style="color: #34d8dd;">Jeslie González</h3>
+        <p>----puesto</p>
+      </div>
+    </div>
+    <div class="card">
+      <img src="/images/switzerland.jpg" alt="Switzerland Alps">
+      <div class="card-text">
+        <h3 style="color: #50c878;">Yohann Mora</h3>
+        <p>----puesto</p>
+      </div>
+    </div>
+    <div class="card">
+      <img src="/images/japan.jpg" alt="Japan">
+      <div class="card-text">
+        <h3 style="color: #fd6824;">Francesco Fallas</h3>
+        <p>----puesto</p>
+      </div>
+    </div>
+    <div class="card">
+      <img src="/images/morocco.jpg" alt="Casablanca - Morocco">
+      <div class="card-text">
+        <h3 style="color: #1f8689;">Rebeca Rivera</h3>
+        <p>----puesto</p>
+      </div>
+    </div>
+    <div class="card">
+      <img src="/images/cappadocia.jpg" alt="Cappadocia - Turkey">
+      <div class="card-text">
+        <h3 style="color: #359b57;">Derek Araya</h3>
+        <p>----puesto</p>
+      </div>
+    </div>
+    <div class="card">
+      <img src="/images/cappadocia.jpg" alt="Cappadocia - Turkey">
+      <div class="card-text">
+        <h3 style="color: #ffd12c;">Luis Felipe Granados</h3>
+        <p>----puesto</p>
+      </div>
+    </div>
+  </div>
+</section>
     </section>
 
     <script>
-        let currentSlide = 0;
-        const track = document.getElementById('carouselTrack');
-        const cards = track.children;
-        const totalSlides = cards.length;
-        let cardsPerView = window.innerWidth > 768 ? 3 : 1;
+        const track = document.querySelector('.carousel-track');
+const slides = Array.from(track.children);
+const nextBtn = document.querySelector('.carousel-btn.right');
+const prevBtn = document.querySelector('.carousel-btn.left');
+const dots = document.querySelectorAll('.dot');
 
-        function createDots() {
-            const dotsContainer = document.getElementById('carouselDots');
-            dotsContainer.innerHTML = '';
-            const numDots = Math.ceil(totalSlides / cardsPerView);
-            for (let i = 0; i < numDots; i++) {
-                const dot = document.createElement('span');
-                dot.className = 'dot';
-                if (i === 0) dot.classList.add('active');
-                dot.onclick = () => goToSlide(i);
-                dotsContainer.appendChild(dot);
-            }
-        }
+let currentIndex = 0;
 
-        function updateCarousel() {
-            const cardWidth = cards[0].offsetWidth + 20;
-            track.style.transform = `translateX(-${currentSlide * cardWidth * cardsPerView}px)`;
-            
-            const dots = document.querySelectorAll('.dot');
-            dots.forEach((dot, i) => {
-                dot.classList.toggle('active', i === Math.floor(currentSlide));
-            });
-        }
+function updateCarousel(index) {
+  const slideWidth = slides[0].getBoundingClientRect().width;
+  track.style.transform = `translateX(-${slideWidth * index}px)`;
 
-        function moveCarousel(direction) {
-            const maxSlide = Math.ceil(totalSlides / cardsPerView) - 1;
-            currentSlide += direction;
-            if (currentSlide < 0) currentSlide = maxSlide;
-            if (currentSlide > maxSlide) currentSlide = 0;
-            updateCarousel();
-        }
+  dots.forEach(dot => dot.classList.remove('active'));
+  dots[index].classList.add('active');
+}
 
-        function goToSlide(index) {
-            currentSlide = index;
-            updateCarousel();
-        }
+nextBtn.addEventListener('click', () => {
+  currentIndex = (currentIndex + 1) % slides.length;
+  updateCarousel(currentIndex);
+});
 
-        window.addEventListener('resize', () => {
-            const newCardsPerView = window.innerWidth > 768 ? 3 : 1;
-            if (newCardsPerView !== cardsPerView) {
-                cardsPerView = newCardsPerView;
-                currentSlide = 0;
-                createDots();
-                updateCarousel();
-            }
-        });
+prevBtn.addEventListener('click', () => {
+  currentIndex = (currentIndex - 1 + slides.length) % slides.length;
+  updateCarousel(currentIndex);
+});
 
-        createDots();
+dots.forEach((dot, index) => {
+  dot.addEventListener('click', () => {
+    currentIndex = index;
+    updateCarousel(currentIndex);
+  });
+});
     </script>
 
-    <section id="courses" style="background: #f8f9fa;">
-        <div class="section-container">
-            <h2>Nuestros Cursos</h2>
-            <p class="section-subtitle">Programas diseñados para impulsar tu carrera profesional</p>
-            
-            <div class="courses-grid">
-                <div class="course-card">
-                    <div class="course-image course-1">
-                        <span>💻</span>
-                        <div class="course-badge">Principiante</div>
-                    </div>
-                    <div class="course-body">
-                        <h3 class="course-title">Desarrollo Web Fundamental</h3>
-                        <p class="course-description">Domina HTML, CSS y JavaScript desde cero. Aprende a crear sitios web modernos, responsivos y profesionales con las mejores prácticas de la industria.</p>
-                        <div class="course-meta">
-                            <span>⏱️ 8 semanas</span>
-                            <span>📚 24 lecciones</span>
-                            <span>🎯 Proyecto final</span>
-                        </div>
-                        <div class="course-footer">
-                            <a href="#" class="course-btn">Ver Curso</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="course-card">
-                    <div class="course-image course-2">
-                        <span>⚙️</span>
-                        <div class="course-badge">Intermedio</div>
-                    </div>
-                    <div class="course-body">
-                        <h3 class="course-title">Programación Backend</h3>
-                        <p class="course-description">Aprende Node.js, bases de datos y desarrollo de APIs. Construye aplicaciones escalables, seguras y eficientes siguiendo las mejores prácticas.</p>
-                        <div class="course-meta">
-                            <span>⏱️ 10 semanas</span>
-                            <span>📚 30 lecciones</span>
-                            <span>🎯 Proyecto final</span>
-                        </div>
-                        <div class="course-footer">
-                            <a href="#" class="course-btn">Ver Curso</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="course-card">
-                    <div class="course-image course-3">
-                        <span>🎨</span>
-                        <div class="course-badge">Principiante</div>
-                    </div>
-                    <div class="course-body">
-                        <h3 class="course-title">Diseño UX/UI</h3>
-                        <p class="course-description">Crea experiencias de usuario excepcionales. Aprende Figma, principios de diseño, investigación de usuarios y prototipado profesional.</p>
-                        <div class="course-meta">
-                            <span>⏱️ 6 semanas</span>
-                            <span>📚 18 lecciones</span>
-                            <span>🎯 Portfolio</span>
-                        </div>
-                        <div class="course-footer">
-                            <a href="#" class="course-btn">Ver Curso</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="cta-section">
-        <h2>¿Listo para Comenzar?</h2>
-        <p>Únete a cientos de estudiantes que están transformando sus carreras</p>
-        <a href="#courses" class="btn-primary">Comenzar Ahora</a>
-    </section>
-
-    <footer>
-        <div class="footer-content">
-            <div class="footer-section">
-                <h4>NervaS</h4>
-                <p>Plataforma de aprendizaje comprometida con tu éxito profesional.</p>
-            </div>
-            <div class="footer-section">
-                <h4>Cursos</h4>
-                <ul>
-                    <li><a href="#">Desarrollo Web</a></li>
-                    <li><a href="#">Backend</a></li>
-                    <li><a href="#">Diseño UX/UI</a></li>
-                    <li><a href="#">Ver todos</a></li>
-                </ul>
-            </div>
-            <div class="footer-section">
-                <h4>Empresa</h4>
-                <ul>
-                    <li><a href="#about">Sobre Nosotros</a></li>
-                    <li><a href="#">Instructores</a></li>
-                    <li><a href="#">Contacto</a></li>
-                    <li><a href="#">Carreras</a></li>
-                </ul>
-            </div>
-            <div class="footer-section">
-                <h4>Soporte</h4>
-                <ul>
-                    <li><a href="#">Centro de Ayuda</a></li>
-                    <li><a href="#">FAQ</a></li>
-                    <li><a href="#">Términos</a></li>
-                    <li><a href="#">Privacidad</a></li>
-                </ul>
-            </div>
-        </div>
-        <div class="footer-bottom">
-            <p>&copy; 2024 NervaS. Todos los derechos reservados.</p>
-        </div>
-    </footer>
+   <footer>
+  <div class="footer-content">
+    <div class="footer-section">
+      <h4>NervaS</h4>
+      <p>Plataforma de aprendizaje comprometida con tu éxito profesional.</p>
+    </div>
+    <div class="footer-section">
+      <h4>Aprendizaje</h4>
+      <ul>
+        <li><a href="#">Brute Force</a></li>
+        <li><a href="#">XSS Scripting</a></li>
+        <li><a href="#">DoS</a></li>
+        <li><a href="#">DDoS</a></li>
+        <li><a href="#">Todos</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>&copy; 2024 NervaS. Todos los derechos reservados.</p>
+  </div>
+</footer>
 </body>
 </html>
