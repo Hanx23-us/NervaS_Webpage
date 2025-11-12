@@ -24,7 +24,7 @@ nav {
 }
 
 .nav-links {
-    padding-right: 100px !important;
+    padding-right: 80px !important;
   list-style: none;
   display: flex;
   gap: 40px;
@@ -48,8 +48,9 @@ nav {
 
 #home {
   height: 100vh;
-  background: url('../NERVAS_web/images/home_1.jpg') no-repeat center center/cover;
+  background: url('../NERVAS_web/images/home_7.jpg') no-repeat center center/cover;
   display: flex;
+  background-size:cover ;
   align-items: center;
   justify-content: center;
   padding-top: 80px;
@@ -116,7 +117,7 @@ nav {
 /* About Section */
 
 #about {
-  background-color: #fefefe;
+  background-color: #fdfdfc; 
   padding: 80px 40px;
   display: flex;
   justify-content: center;
@@ -171,68 +172,92 @@ nav {
 
 /* Mission, Vision, Values Section */
 
-.section-header-mission {
-  text-align: center;
-  margin-bottom: 40px;
-  color: #359b57;
-}
 
-.section-header-vission {
-  text-align: center;
-  margin-bottom: 40px;
-  width: 100%;
-  color: #34d8dd;
-}
+.mvv-section {
+            background: #faf5ea;
+        }
 
-.section-header-values {
-  text-align: center;
-  margin-bottom: 40px;
-  width: 100%;
-  color: #1f8689;
-}
+        .mvv-section h2 {
+            text-align: center;
+            font-size: 2.5rem;
+            color: #333;
+            margin-bottom: 1rem;
+        }
 
-.text-m{
-    color: #359b57;
-    font-weight: bold;
-}
+        .section-subtitle {
+            text-align: center;
+            font-size: 1.2rem;
+            color: #666;
+            margin-bottom: 3rem;
+        }
 
-.text-v{
-    color: #34d8dd;
-    font-weight: bold;
-}
+        .mvv-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 2.5rem;
+        }
 
-.text-vv{
-    color: #1f8689;
-    font-weight: bold;
-}
+        .mvv-card {
+            background: white;
+            padding: 3rem;
+            border-radius: 15px;
+            border-left: 5px solid #50c878;
+            box-shadow: 0 3px 15px rgba(0,0,0,0.08);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
 
-.bottom-section {
-  display: flex;
-  justify-content: space-around;
-  padding: 40px 20px;
-  background-color: #e9ecef;
-}
+        .mvv-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+        }
 
-.bottom-card {
-  width: 30%;
-  text-align: center;
-}
+        .mvv-card:nth-child(2) {
+            border-left-color: #ffd12c;
+        }
 
-.bottom-card .icon {
-  font-size: 30px;
-  margin-bottom: 10px;
-}
+        .mvv-card:nth-child(3) {
+            border-left-color: #fd6824;
+        }
 
-.bottom-card p {
-  font-size: 15px;
-  line-height: 1.4;
-}
+        .mvv-icon {
+            font-size: 3.5rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .mvv-card h3 {
+            font-size: 1.8rem;
+            margin-bottom: 1rem;
+            font-weight: 700;
+        }
+
+        .mvv-card p {
+            color: #555;
+            line-height: 1.9;
+            font-size: 1.1rem;
+        }
+
+        .values-list {
+            list-style: none;
+            padding: 0;
+            margin-top: 1rem;
+        }
+
+        .values-list li {
+            padding: 0.7rem 0;
+            color: #555;
+            font-size: 1.1rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+
 
 /*Carrusel*/
 
 .destinations {
   padding: 60px 40px;
-  background-color: #fefefe;
+  background-color: #fdfdfc;
   text-align: center;
 }
 

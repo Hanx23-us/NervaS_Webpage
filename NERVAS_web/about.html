@@ -9,14 +9,15 @@
 </head>
 <body>
     <nav>
-        <a href="Main.html" class="logo">Nerva<span class="s">S</span></a>
-        <ul>
-            <li><a href="Main.html">Inicio</a></li>
-            <li><a href="about.html">Nosotros</a></li>
-            <li><a href="cursos.html">Cursos</a></li>
-            <li><a href="#" class="nav-cta">Comenzar</a></li>
-        </ul>
-    </nav>
+    <div class="logo">
+      <img src="images/Nervas_logo.png" alt="Logo" style="transform: scale(0.8);" />
+    </div>
+    <ul class="nav-links">
+      <li><a href="Main.html">Inicio</a></li>
+      <li><a href="about.html">Nosotros</a></li>
+      <li><a href="cursos.html">Aprendizaje</a></li>
+    </ul>
+  </nav>
 
     <section class="about-hero">
         <h1>Conoce a NervaS</h1>
@@ -26,157 +27,77 @@
     <section class="who-we-are">
         <div class="section-container">
             <div class="about-card">
-                <div class="about-icon">🎓</div>
+                <div class="about-icon"><img src="../NERVAS_web/images/chatbox_trigger.png" style="transform: scale(0.23);"></div>
                 <div>
                     <h2>¿Quiénes Somos?</h2>
-                    <p>NervaS es una plataforma de aprendizaje en línea comprometida con proporcionar educación accesible y de calidad. Trabajamos con instructores expertos de la industria para crear contenido actualizado y práctico que impulse tu carrera profesional.</p>
-                    <p>Nuestra metodología combina teoría con práctica, permitiendo que los estudiantes adquieran habilidades aplicables desde el primer día. Creemos en el poder transformador de la educación y en el potencial ilimitado de cada estudiante.</p>
+                    <p style="color: #8bc34a;">NervaS es una plataforma de aprendizaje en línea comprometida con proporcionar educación accesible y de calidad. Trabajamos con instructores expertos de la industria para crear contenido actualizado y práctico que impulse tu carrera profesional.</p>
+                    <p style="color: #8bc34a;">Nuestra metodología combina teoría con práctica, permitiendo que los estudiantes adquieran habilidades aplicables desde el primer día. Creemos en el poder transformador de la educación y en el potencial ilimitado de cada estudiante.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="mvv-section">
+      <div class="mvv-section">
         <div class="section-container">
+          <br>
             <h2>Nuestra Esencia</h2>
             <p class="section-subtitle">Los principios que guían cada decisión en NervaS</p>
-            
+           
             <div class="mvv-grid">
                 <div class="mvv-card">
-                    <div class="mvv-icon">🎯</div>
-                    <h3>Misión</h3>
-                    <p>Democratizar el acceso a educación de calidad mediante tecnología, ofreciendo cursos accesibles que empoderen a personas de todo el mundo a alcanzar sus metas profesionales y personales, transformando vidas a través del conocimiento.</p>
+                    <div class="mvv-icon"></div>
+                    <h3 style="color: #359b57;">Misión</h3>
+                    <p>Brindar a los estudiantes de ciberseguridad de nuestra institución acceso a una plataforma que les exponga a entornos simulados tan similares como posible a casos en la vida real.</p>
                 </div>
                 <div class="mvv-card">
-                    <div class="mvv-icon">🔭</div>
-                    <h3>Visión</h3>
-                    <p>Ser la plataforma de aprendizaje líder en Latinoamérica, reconocida por la excelencia de nuestros contenidos, la innovación en métodos de enseñanza y el impacto positivo en la vida de miles de estudiantes.</p>
+                    <div class="mvv-icon"></div>
+                    <h3 style="color: #ffd12c;">Visión</h3>
+                    <p>Ser una plataforma útil y beneficiosa para el desarrollo de los estudiantes de nuestra institución en materia de ciberseguridad.</p>
                 </div>
                 <div class="mvv-card">
-                    <div class="mvv-icon">⭐</div>
-                    <h3>Valores</h3>
+                    <div class="mvv-icon"></div>
+                    <h3 style="color: #fd6824;">Valores</h3>
                     <ul class="values-list">
                         <li>✓ Excelencia educativa</li>
                         <li>✓ Innovación constante</li>
                         <li>✓ Accesibilidad para todos</li>
-                        <li>✓ Comunidad colaborativa</li>
+                        <li>✓ Conocimiento realista</li>
                         <li>✓ Integridad y transparencia</li>
-                        <li>✓ Impacto social positivo</li>
                     </ul>
                 </div>
             </div>
+            <br>
         </div>
-    </section>
+        </div>
 
     <section class="team-section">
-        <div class="section-container">
-            <h2>Nuestro Equipo</h2>
-            <p class="section-subtitle">Los creadores apasionados detrás de NervaS</p>
+        <div class="sprout-container">
+            <h2 style="color: #8bc34a;">Conoce a Sprout</h2>
+            <p class="section-subtitle" style="color: #8bc34a;">¡El principal maestro y guía de NervaS! <br> Sprout te ayudara durante los laboratorios en cuanto necesites.</p>
             
-            <div class="carousel-container">
-                <button class="carousel-btn prev" onclick="moveCarousel(-1)">‹</button>
-                <div class="carousel-wrapper">
-                    <div class="carousel-track" id="carouselTrack">
-                        <div class="team-card">
-                            <div class="team-photo" style="background: linear-gradient(135deg, #50c878, #359b57);">
-                                <span class="team-initial">AM</span>
-                            </div>
-                            <h4>Ana Martínez</h4>
-                            <p class="team-role">CEO & Fundadora</p>
-                            <p class="team-description">Experta en educación digital con más de 10 años de experiencia transformando métodos de enseñanza tradicionales.</p>
-                        </div>
-                        <div class="team-card">
-                            <div class="team-photo" style="background: linear-gradient(135deg, #fd6824, #ff8c5a);">
-                                <span class="team-initial">JR</span>
-                            </div>
-                            <h4>José Rodríguez</h4>
-                            <p class="team-role">CTO</p>
-                            <p class="team-description">Arquitecto de software con pasión por la innovación tecnológica y experiencia en plataformas escalables.</p>
-                        </div>
-                        <div class="team-card">
-                            <div class="team-photo" style="background: linear-gradient(135deg, #1f8689, #34d8dd);">
-                                <span class="team-initial">ML</span>
-                            </div>
-                            <h4>María López</h4>
-                            <p class="team-role">Directora de Contenido</p>
-                            <p class="team-description">Diseñadora instruccional especializada en e-learning, creando experiencias educativas memorables.</p>
-                        </div>
-                        <div class="team-card">
-                            <div class="team-photo" style="background: linear-gradient(135deg, #ffd12c, #ffe066);">
-                                <span class="team-initial">CF</span>
-                            </div>
-                            <h4>Carlos Fernández</h4>
-                            <p class="team-role">Director de Marketing</p>
-                            <p class="team-description">Estratega digital enfocado en crecimiento, construcción de comunidad y engagement de estudiantes.</p>
-                        </div>
-                        <div class="team-card">
-                            <div class="team-photo" style="background: linear-gradient(135deg, #50c878, #8bc34a);">
-                                <span class="team-initial">LG</span>
-                            </div>
-                            <h4>Laura García</h4>
-                            <p class="team-role">Líder de UX/UI</p>
-                            <p class="team-description">Diseñadora centrada en crear experiencias intuitivas que faciliten el aprendizaje efectivo.</p>
-                        </div>
-                        <div class="team-card">
-                            <div class="team-photo" style="background: linear-gradient(135deg, #fd6824, #ffd12c);">
-                                <span class="team-initial">DR</span>
-                            </div>
-                            <h4>David Ramírez</h4>
-                            <p class="team-role">Ingeniero Senior</p>
-                            <p class="team-description">Desarrollador full-stack apasionado por escribir código limpio, eficiente y mantenible.</p>
-                        </div>
-                    </div>
-                </div>
-                <button class="carousel-btn next" onclick="moveCarousel(1)">›</button>
-            </div>
-            <div class="carousel-dots" id="carouselDots"></div>
+             <div class="template">
+        <img src="../NERVAS_web/images/head.png" class="head">
+        <img src="../NERVAS_web/images/left_ear.png" class="left_ear" id="left_ear">
+        <img src="../NERVAS_web/images/right_ear.png" class="right_ear" id="right_ear">
+        <img src="../NERVAS_web/images/eyes.png" class="eyes">
+        <img src="../NERVAS_web/images/left_eyebrow.png" class="left_eyebrow">
+        <img src="../NERVAS_web/images/right_eyebrow.png" class="right_eyebrow" id="right_eyebrow">
+        <img src="../NERVAS_web/images/mouth.png" class="mouth">
+  </div>       
         </div>
     </section>
 
     <section class="cta-section">
         <h2>¿Listo para Unirte?</h2>
         <p>Forma parte de nuestra comunidad de aprendizaje</p>
-        <a href="#" class="btn-primary">Explorar Cursos</a>
+        <a href="cursos.html" class="btn-primary">Explorar Cursos</a>
     </section>
 
     <footer>
-        <div class="footer-content">
-            <div class="footer-section">
-                <h4>NervaS</h4>
-                <p>Plataforma de aprendizaje comprometida con tu éxito profesional.</p>
-            </div>
-            <div class="footer-section">
-                <h4>Cursos</h4>
-                <ul>
-                    <li><a href="#">Desarrollo Web</a></li>
-                    <li><a href="#">Backend</a></li>
-                    <li><a href="#">Diseño UX/UI</a></li>
-                    <li><a href="#">Ver todos</a></li>
-                </ul>
-            </div>
-            <div class="footer-section">
-                <h4>Empresa</h4>
-                <ul>
-                    <li><a href="#">Sobre Nosotros</a></li>
-                    <li><a href="#">Instructores</a></li>
-                    <li><a href="#">Contacto</a></li>
-                    <li><a href="#">Carreras</a></li>
-                </ul>
-            </div>
-            <div class="footer-section">
-                <h4>Soporte</h4>
-                <ul>
-                    <li><a href="#">Centro de Ayuda</a></li>
-                    <li><a href="#">FAQ</a></li>
-                    <li><a href="#">Términos</a></li>
-                    <li><a href="#">Privacidad</a></li>
-                </ul>
-            </div>
-        </div>
-        <div class="footer-bottom">
-            <p>&copy; 2024 NervaS. Todos los derechos reservados.</p>
-        </div>
-    </footer>
+    <p style="text-align: center; font-weight: bold;"> NervaS EXPOTEC 2025</p>
+    <p style="text-align: center;">&copy; 2024 NervaS. Todos los derechos reservados.</p>
+
+</footer>
 
     <script>
         let currentSlide = 0;

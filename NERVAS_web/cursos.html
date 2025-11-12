@@ -8,297 +8,100 @@
 </head>
 <body>
     <nav>
-        <a href="Main.html" class="logo">Nerva<span class="s">S</span></a>
-        <ul>
-            <li><a href="Main.html">Inicio</a></li>
-            <li><a href="about.html">Nosotros</a></li>
-            <li><a href="cursos.html">Cursos</a></li>
-            <li><a href="#" class="nav-cta">Comenzar</a></li>
-        </ul>
-    </nav>
-
-    <section class="courses-hero">
-        <h1>Catálogo de Cursos</h1>
-        <p>Descubre cursos diseñados por expertos para impulsar tu carrera profesional</p>
-    </section>
-
-
-
-    <section class="categories-section">
-        <div class="categories-grid">
-            <div class="category-card" data-category="desarrollo">
-                <div class="category-icon cat-1">💻</div>
-                <div class="category-info">
-                    <h3>Desarrollo Web</h3>
-                    <p>15 cursos disponibles</p>
-                </div>
-            </div>
-            <div class="category-card" data-category="backend">
-                <div class="category-icon cat-2">⚙️</div>
-                <div class="category-info">
-                    <h3>Backend</h3>
-                    <p>12 cursos disponibles</p>
-                </div>
-            </div>
-            <div class="category-card" data-category="diseno">
-                <div class="category-icon cat-3">🎨</div>
-                <div class="category-info">
-                    <h3>Diseño UX/UI</h3>
-                    <p>10 cursos disponibles</p>
-                </div>
-            </div>
-            <div class="category-card" data-category="datos">
-                <div class="category-icon cat-4">📊</div>
-                <div class="category-info">
-                    <h3>Ciencia de Datos</h3>
-                    <p>8 cursos disponibles</p>
-                </div>
-            </div>
-        </div>
-    </section>
+    <div class="logo">
+      <img src="images/Nervas_logo.png" alt="Logo" style="transform: scale(0.8);" />
+    </div>
+    <ul class="nav-links">
+      <li><a href="Main.html">Inicio</a></li>
+      <li><a href="about.html">Nosotros</a></li>
+      <li><a href="cursos.html">Aprendizaje</a></li>
+    </ul>
+  </nav>
 
     <section class="courses-section">
+        <br>
+        <br>
+        <br>
         <div class="section-header">
-            <h2>Todos los Cursos</h2>
-            <span class="results-count" id="resultsCount">Mostrando 9 de 45 cursos</span>
+            <h2>Directorio de ataques</h2>
         </div>
 
         <div class="courses-grid" id="coursesGrid">
             <!-- Curso 1 -->
             <div class="course-card" data-level="beginner" data-category="desarrollo">
-                <div class="course-image" style="background: linear-gradient(135deg, #fd6824, #ff8c5a);">
-                    <span>💻</span>
+                <div class="course-image" style="background: url(../NERVAS_web/images/DDOS.jpg);">
                     <div class="course-badge badge-beginner">Principiante</div>
-                    <div class="course-duration">8 semanas</div>
+                    <div class="course-duration">Conceptos</div>
                 </div>
                 <div class="course-body">
-                    <div class="course-category">Desarrollo Web</div>
-                    <h3 class="course-title">Desarrollo Web Fundamental</h3>
-                    <p class="course-description">Aprende HTML, CSS y JavaScript desde cero. Crea sitios web modernos y responsivos con las mejores prácticas.</p>
-                    <div class="course-meta">
-                        <span class="meta-item">📚 24 lecciones</span>
-                        <span class="meta-item">⭐ 4.8 (320)</span>
-                    </div>
+                    <div class="course-category">DDoS</div>
+                    <h3 class="course-title">Ataques tirar a matar: Distributed Denial of Service</h3>
+                    <p class="course-description">Adquiere los conocimientos y bases conocidas acerca del DDoS, su propósito, tipos y motivos.</p> 
                 </div>
                 <div class="course-footer">
-                    <span class="course-price">$49.99</span>
-                    <button class="course-btn">Ver Curso</button>
+                    <span class="course-price">15 min</span>
+                    <button class="course-btn">Ver Información</button>
                 </div>
             </div>
 
             <!-- Curso 2 -->
             <div class="course-card" data-level="intermediate" data-category="backend">
-                <div class="course-image" style="background: linear-gradient(135deg, #1f8689, #34d8dd);">
-                    <span>⚙️</span>
+                <div class="course-image" style="background: url(../NERVAS_web/images/sql.jpg);">
+                    <span></span>
                     <div class="course-badge badge-intermediate">Intermedio</div>
-                    <div class="course-duration">10 semanas</div>
+                    <div class="course-duration">Conceptos</div>
                 </div>
                 <div class="course-body">
-                    <div class="course-category">Backend</div>
-                    <h3 class="course-title">Programación Backend con Node.js</h3>
-                    <p class="course-description">Domina Node.js, Express y bases de datos. Construye APIs escalables y seguras.</p>
-                    <div class="course-meta">
-                        <span class="meta-item">📚 30 lecciones</span>
-                        <span class="meta-item">⭐ 4.9 (450)</span>
-                    </div>
+                    <div class="course-category">SQL Injection</div>
+                    <h3 class="course-title">Bases de datos vulnerables: Inyecciones SQL</h3>
+                    <p class="course-description">Identificar bases de datos vulnerables, fortalecerlas. Conceptos y definiciones sobre las SQL Injection.</p>
                 </div>
                 <div class="course-footer">
-                    <span class="course-price">$79.99</span>
-                    <button class="course-btn">Ver Curso</button>
+                    <span class="course-price">15 min</span>
+                    <button class="course-btn">Ver Información</button>
                 </div>
             </div>
 
             <!-- Curso 3 -->
             <div class="course-card" data-level="beginner" data-category="diseno">
-                <div class="course-image" style="background: linear-gradient(135deg, #ffd12c, #ffe066);">
-                    <span>🎨</span>
+                <div class="course-image" style="background: url(../NERVAS_web/images/brute.jpg);">
+                    <span></span>
                     <div class="course-badge badge-beginner">Principiante</div>
-                    <div class="course-duration">6 semanas</div>
+                    <div class="course-duration">Conceptos</div>
                 </div>
                 <div class="course-body">
-                    <div class="course-category">Diseño UX/UI</div>
-                    <h3 class="course-title">Fundamentos de Diseño UX/UI</h3>
-                    <p class="course-description">Aprende Figma, principios de diseño y crea experiencias de usuario excepcionales.</p>
-                    <div class="course-meta">
-                        <span class="meta-item">📚 18 lecciones</span>
-                        <span class="meta-item">⭐ 4.7 (280)</span>
-                    </div>
+                    <div class="course-category">Brute Force Attack</div>
+                    <h3 class="course-title">Ataques forzados y continuos: ¿Que es un brute force?</h3>
+                    <p class="course-description">Sus diversas formas de implementación, formas de uso e información base.</p>
                 </div>
                 <div class="course-footer">
-                    <span class="course-price">$59.99</span>
-                    <button class="course-btn">Ver Curso</button>
+                    <span class="course-price">10 min</span>
+                    <button class="course-btn">Ver Información</button>
                 </div>
             </div>
 
             <!-- Curso 4 -->
             <div class="course-card" data-level="advanced" data-category="desarrollo">
-                <div class="course-image" style="background: linear-gradient(135deg, #50c878, #8bc34a);">
-                    <span>⚛️</span>
+                <div class="course-image" style="background: url(../NERVAS_web/images/xss.jpg);">
+                    <span></span>
                     <div class="course-badge badge-advanced">Avanzado</div>
-                    <div class="course-duration">12 semanas</div>
+                    <div class="course-duration">Conceptos</div>
                 </div>
                 <div class="course-body">
-                    <div class="course-category">Desarrollo Web</div>
-                    <h3 class="course-title">React Avanzado y Patrones</h3>
-                    <p class="course-description">Domina React, hooks avanzados, estado global y arquitectura de aplicaciones complejas.</p>
-                    <div class="course-meta">
-                        <span class="meta-item">📚 35 lecciones</span>
-                        <span class="meta-item">⭐ 5.0 (520)</span>
-                    </div>
+                    <div class="course-category">XSS</div>
+                    <h3 class="course-title">Engañar al codigo: Inyecciones permanentes</h3>
+                    <p class="course-description">Todo acerca de el ataque de tipo Cross-site Scripting, y sus diversos motivos y repercusiones sobre el código.</p>
                 </div>
                 <div class="course-footer">
-                    <span class="course-price">$99.99</span>
-                    <button class="course-btn">Ver Curso</button>
+                    <span class="course-price">20 min</span>
+                    <button class="course-btn">Ver Información</button>
                 </div>
             </div>
-
-            <!-- Curso 5 -->
-            <div class="course-card" data-level="intermediate" data-category="datos">
-                <div class="course-image" style="background: linear-gradient(135deg, #fd6824, #ffd12c);">
-                    <span>📊</span>
-                    <div class="course-badge badge-intermediate">Intermedio</div>
-                    <div class="course-duration">9 semanas</div>
-                </div>
-                <div class="course-body">
-                    <div class="course-category">Ciencia de Datos</div>
-                    <h3 class="course-title">Python para Análisis de Datos</h3>
-                    <p class="course-description">Aprende pandas, numpy y visualización de datos. Analiza datasets reales.</p>
-                    <div class="course-meta">
-                        <span class="meta-item">📚 28 lecciones</span>
-                        <span class="meta-item">⭐ 4.8 (390)</span>
-                    </div>
-                </div>
-                <div class="course-footer">
-                    <span class="course-price">$69.99</span>
-                    <button class="course-btn">Ver Curso</button>
-                </div>
-            </div>
-
-            <!-- Curso 6 -->
-            <div class="course-card" data-level="beginner" data-category="desarrollo">
-                <div class="course-image" style="background: linear-gradient(135deg, #1f8689, #50c878);">
-                    <span>🐍</span>
-                    <div class="course-badge badge-beginner">Principiante</div>
-                    <div class="course-duration">7 semanas</div>
-                </div>
-                <div class="course-body">
-                    <div class="course-category">Desarrollo Web</div>
-                    <h3 class="course-title">Python desde Cero</h3>
-                    <p class="course-description">Fundamentos de programación con Python. Sintaxis, estructuras de datos y POO.</p>
-                    <div class="course-meta">
-                        <span class="meta-item">📚 22 lecciones</span>
-                        <span class="meta-item">⭐ 4.9 (610)</span>
-                    </div>
-                </div>
-                <div class="course-footer">
-                    <span class="course-price">$39.99</span>
-                    <button class="course-btn">Ver Curso</button>
-                </div>
-            </div>
-
-            <!-- Curso 7 -->
-            <div class="course-card" data-level="intermediate" data-category="diseno">
-                <div class="course-image" style="background: linear-gradient(135deg, #ffd12c, #fd6824);">
-                    <span>🖌️</span>
-                    <div class="course-badge badge-intermediate">Intermedio</div>
-                    <div class="course-duration">8 semanas</div>
-                </div>
-                <div class="course-body">
-                    <div class="course-category">Diseño UX/UI</div>
-                    <h3 class="course-title">Diseño de Interfaces Avanzado</h3>
-                    <p class="course-description">Sistema de diseño, prototipado interactivo y diseño para diferentes plataformas.</p>
-                    <div class="course-meta">
-                        <span class="meta-item">📚 26 lecciones</span>
-                        <span class="meta-item">⭐ 4.7 (310)</span>
-                    </div>
-                </div>
-                <div class="course-footer">
-                    <span class="course-price">$74.99</span>
-                    <button class="course-btn">Ver Curso</button>
-                </div>
-            </div>
-
-            <!-- Curso 8 -->
-            <div class="course-card" data-level="advanced" data-category="backend">
-                <div class="course-image" style="background: linear-gradient(135deg, #359b57, #1f8689);">
-                    <span>🔐</span>
-                    <div class="course-badge badge-advanced">Avanzado</div>
-                    <div class="course-duration">11 semanas</div>
-                </div>
-                <div class="course-body">
-                    <div class="course-category">Backend</div>
-                    <h3 class="course-title">Arquitectura de Microservicios</h3>
-                    <p class="course-description">Diseña sistemas distribuidos escalables. Docker, Kubernetes y patrones cloud.</p>
-                    <div class="course-meta">
-                        <span class="meta-item">📚 32 lecciones</span>
-                        <span class="meta-item">⭐ 5.0 (420)</span>
-                    </div>
-                </div>
-                <div class="course-footer">
-                    <span class="course-price">$89.99</span>
-                    <button class="course-btn">Ver Curso</button>
-                </div>
-            </div>
-
-            <!-- Curso 9 -->
-            <div class="course-card" data-level="beginner" data-category="datos">
-                <div class="course-image" style="background: linear-gradient(135deg, #50c878, #ffd12c);">
-                    <span>📈</span>
-                    <div class="course-badge badge-beginner">Principiante</div>
-                    <div class="course-duration">6 semanas</div>
-                </div>
-                <div class="course-body">
-                    <div class="course-category">Ciencia de Datos</div>
-                    <h3 class="course-title">Introducción a Data Science</h3>
-                    <p class="course-description">Fundamentos de ciencia de datos, estadística y primeros pasos con Python.</p>
-                    <div class="course-meta">
-                        <span class="meta-item">📚 20 lecciones</span>
-                        <span class="meta-item">⭐ 4.6 (250)</span>
-                    </div>
-                </div>
-                <div class="course-footer">
-                    <span class="course-price">$54.99</span>
-                    <button class="course-btn">Ver Curso</button>
-                </div>
-            </div>
-        </div>
     </section>
 
-    <footer>
-        <div class="footer-content">
-            <div class="footer-section">
-                <h4>NervaS</h4>
-                <p>Plataforma de aprendizaje comprometida con tu éxito profesional.</p>
-            </div>
-            <div class="footer-section">
-                <h4>Cursos</h4>
-                <ul>
-                    <li><a href="#">Desarrollo Web</a></li>
-                    <li><a href="#">Backend</a></li>
-                    <li><a href="#">Diseño UX/UI</a></li>
-                    <li><a href="#">Ver todos</a></li>
-                </ul>
-            </div>
-            <div class="footer-section">
-                <h4>Empresa</h4>
-                <ul>
-                    <li><a href="#">Sobre Nosotros</a></li>
-                    <li><a href="#">Instructores</a></li>
-                    <li><a href="#">Contacto</a></li>
-                    <li><a href="#">Carreras</a></li>
-                </ul>
-            </div>
-            <div class="footer-section">
-                <h4>Soporte</h4>
-                <ul>
-                    <li><a href="#">Centro de Ayuda</a></li>
-                    <li><a href="#">FAQ</a></li>
-                    <li><a href="#">Términos</a></li>
-                    <li><a href="#">Privacidad</a></li>
-                </ul>
-            </div>
-        </div>
-        <div class="footer-bottom">
-            <p>&copy; 2024 NervaS. Todos los derechos reservados.</p>
-        </div>
+  <footer>
+    <p style="text-align: center; font-weight: bold;"> NervaS EXPOTEC 2025</p>
+    <p style="text-align: center;">&copy; 2024 NervaS. Todos los derechos reservados.</p>
+
+</footer>
     </footer>
