@@ -40,12 +40,12 @@
                 </div>
                 <div class="course-footer">
                     <span class="course-price">15 min</span>
-                    <button class="course-btn">Ver Información</button>
+                    <button class="course-btn" onclick="abrirModal('modal1')">Ver Información</button>
                 </div>
             </div>
 
             <!-- Curso 2 -->
-            <div class="course-card" data-level="intermediate" data-category="backend">
+            <div class="course-card">
                 <div class="course-image" style="background: url(../NERVAS_web/images/sql.jpg);">
                     <span></span>
                     <div class="course-badge badge-intermediate">Intermedio</div>
@@ -58,7 +58,7 @@
                 </div>
                 <div class="course-footer">
                     <span class="course-price">15 min</span>
-                    <button class="course-btn">Ver Información</button>
+                    <button class="course-btn" onclick="abrirModal('modal2')">Ver Información</button>
                 </div>
             </div>
 
@@ -76,7 +76,7 @@
                 </div>
                 <div class="course-footer">
                     <span class="course-price">10 min</span>
-                    <button class="course-btn">Ver Información</button>
+                    <button class="course-btn" onclick="abrirModal('modal3')">Ver Información</button>
                 </div>
             </div>
 
@@ -94,14 +94,156 @@
                 </div>
                 <div class="course-footer">
                     <span class="course-price">20 min</span>
-                    <button class="course-btn">Ver Información</button>
+                    <button class="course-btn" onclick="abrirModal('modal4')">Ver Información</button>
                 </div>
             </div>
     </section>
 
+    <!--Modales-->
+    <div class="overlay" id="modal3">
+  <div class="modal">
+    <h2>Ahora hablemos de Brute Force Attack</h2><br>
+    <p style="font-size: large;">¿Qué hermoso que suena, no? o acaso es que yo estoy muy loco, en fin, ¡Hola!, es Sprout hablando de nuevo.
+<br>En esta lección hablaremos de este querido ataque que al igual que su primo DDoS, también hemos escuchado mucho…</p><br>
+  <pre style="font-size: large; color: #50c878; font-weight: bolder;">¿Qué es?</pre>
+<br>
+  <p>Como su bello nombre lo indica, el  Brute Force Attack atenta contra la autenticación, ¿cómo?, a fuerza bruta se intentan muchas contraseñas comunes con múltiples cuentas, ¿por qué?, con el fin de comprometer las cuentas de los usuarios. Definitivamente creo que soy el mejor profe, ¡qué locura!</p>  <br>
+  <br><pre style="font-size: large; color: #50c878; font-weight: bolder;">¿En qué consiste? </pre>
+<br><p>Para entender mejor, nos vamos a ir de viaje tu y yo a una ciudad con el mejor bar de toda la ciudad, en este bar tenemos como portero, a nada más y nada menos que The Rock, es un tipo rudo y fuerte no crees, bastante útil para vigilar la entrada de este bar, The Rock tiene la tarea de revisar cada carnet de las personas que tienen acceso al bar, carnet cuya información tiene que coincidir con la que tiene nuestro portero, ahora, observamos que hay un pillo tratando de entrar a este bar que tiene muchos carnets, tiene cientos, no no, más, tiene miles, al menos 1 será el correcto, y efectivamente, este pillo a <n style="font-size: bolder; color: #50c878;">cada hora va a probar un nuevo carnet hasta que logra acceder</n>, este proceso tan exhaustivo fue el Brute Force Attack.</p>  <br>
+    <br>
+  <pre style="font-size: large; color: #50c878; font-weight: bolder;">Herramientas</pre>
+  <br>
+  <p><li style="margin-left: 50px;">IAM / SSO: son herramientas que gestionan usuarios y autenticación centralizada, como un registro único del barrio en donde se encuentra nuestro bar.</li>
+<li style="margin-left: 50px;">MFA: la segunda cerradura que evita que alguien entre solo con el carnet robado.
+<li style="margin-left: 50px;">SIEM / UEBA: analizan patrones de login raros, como que este pillo utilice varios carnets seguidos y repetidos.
+<li style="margin-left: 50px;">Rate limiters & bot-management: frenan a quien insiste demasiado en probar carnets, es como si The Rock tuviera un perro guardián</li>  <br>
+  <pre style="font-size: large; color: #50c878; font-weight: bolder;">Ejemplo Mundial</pre>
+  <br><p>Uno de los casos más famosos, es el de la filtración de LinkedIn, tras grandes filtraciones de datos, se produjeron oleadas masivas de credential stuffing, credenciales robadas por el pillo que se probaron en múltiples servicios y que gracias a esto,  muchas cuentas fueron tomadas por reutilizar la misma contraseña.</p>  <br>
+  <br><p>Para evitar que nuestra información se vea así de comprometida, hay que entender que la solución es poner múltiples porteros en nuestra entrada, o candados, mientras que centralizamos el acceso con IAM/SSO, obligando MFA en cuentas críticas, no solo pidiendo carnets y aplicando rate limiting y bot management para frenar intentos automáticos. Por último utilizamos la detección con SIEM/UEBA y feeds de breaches para bloquear contraseñas comprometidas.
+</p><br>
+<img src="../NERVAS_web/images/brute.webp" style="width: 500px; text-align: center !important;">
+<br>
+    <button class="close-btn" onclick="cerrarModal('modal3')">Cerrar</button>
+  </div>
+</div>
+
+<div class="overlay" id="modal1">
+  <div class="modal">
+    <h2>Comencemos hablando de DDoS…</h2>
+    <p style="font-size: large;">Hola, soy Sprout hablando desde el más allá, mira viejo, en este apartado encontrarás información como:</p> <br><pre style="font-size: large; color: #50c878; font-weight: bolder;">¿Qué es?
+</pre>
+<br>
+  <p>Esta famosa palabra la hemos escuchado varias veces en nuestro día a día como técnicos en ciberseguridad, sin embargo, muchas veces no sabemos ni siquiera de lo que nos están hablando, así que para definirlo, el ataque DDoS se da <n style="font-size: bolder; color: #50c878;">cuando  en un servicio llega demasiado tráfico o demasiadas conexiones simultáneas</n>, haciendo que la capacidad de este servicio se caiga y aquí es donde todos los usuarios o personas que utilizan ese servicio se enfadan, tiran sillas, queman casas y se pelean, mientras que nuestro servicio se encuentra más o menos así: </p>
+  <br>
+  <img src="../NERVAS_web/images/ThisIsFineDog.webp" style="margin: 10px;">
+  <pre style="font-size: large; color: #50c878; font-weight: bolder;">¿En qué consiste?</pre>
+  <br><p style="font-size: large;">Te lo explico de una forma sencilla y divertida de entender.</p>
+  <br><p>Quiero que imagines una carretera la cual se encuentra completamente vacía, imagina la 27 a las 4 am (a esta carretera la llamaremos peering), al pasar las horas, múltiples personas necesitan transportarse de un lugar a otro y requieren utilizar esta carretera la cual de repente y sin saber qué pasó, empieza a llenarse de<n style="font-size: bolder; color: #50c878;"> muchos vehículos</n>, los cuales <n style="font-size: bolder; color: #50c878;">dificultan el paso</n>, provocando que oficiales (nosotros, los técnicos en ciberseguridad), empiecen a notar algo extraño y nuestros sistemas de seguridad empiezan a denegar el acceso a esta carretera haciendo que el paso de un lado a otro quede rotundamente caído, ¿viste que sencillo que era?</p> 
+  <br>
+  <p>En síntesis en este tipo de ataque, los ciberatacantes mandan unos bichitos, mejor conocidos como <n style="font-size: bolder; color: #50c878;"> bots </n>, a realizar solicitudes infinitas a servicios en donde los firewalls por ejemplo nieguen estas solicitudes, incluyendo la de usuarios comunes, <n style="font-size: bolder; color: #50c878;">haciendo que el servicio se caiga.</n></p>
+  <br>
+  <pre style="font-size: large; color: #50c878; font-weight: bolder;">Herramientas</pre>
+  <br><p>Cabe mencionar que existen varias herramientas para este apartado, sin embargo, mi querido equipo ha recolectado estas herramientas ya que creen que son bastante relevantes…
+</p>
+  <p><li style="margin-left: 50px;">NetFlow y sFlow: ¿recuerdas la carretera?, estas cosas son como el <n style="font-size: bolder; color: #50c878;">radar que revisan estas carreteras, son capaces de decirte <n style="font-size: bolder; color: #50c878;">“quién habla o habló con quién”</n> y cuánto tráfico manda cada quien, sin tener que revisar paquetes uno por uno.
+</li>
+<li style="margin-left: 50px;">PCAP summary: siguiendo con el mismo ejemplo, esta herramienta te brinda un “foto-resumen” de lo que pasa en la carretera cuando no querés guardar todo el tráfico, te da pistas rápidas sin llenar discos.</li>
+<li style="margin-left: 50px;">Métricas de LB: estos dashboards te gritan (no literalmente) RPS, conexiones activas y errores, son los semáforos capaz de mostrar si un carril se está atascando.
+<li style="margin-left: 50px;">SIEM : junta señales del firewall, NetFlow y apps para decir “ojito piojito, esto parece un DDoS” y mantener el historial forense.<li style="margin-left: 50px;">APM : es una app que te enseña qué endpoint está sufriendo y qué función está gastando CPU, es el mecánico que te indica qué pieza falla.</p>
+  <br>
+  <pre style="font-size: large; color: #50c878; font-weight: bolder;">Ejemplo Mundial</pre>
+  <br><p>Caso Dyn, en octubre del 2016, una botnet de dispositivos IoT llamada Mirai, inundó los servidores DNS de Dyn, contagiando así miles de sitios, entre ellos 3 bastante conocidos, Twitter, Netflix y Reddit, trayendoles lentitud y caídas. La lección que logramos rescatar de este caso es que si la autopista de resolución de nombres se cae, gran parte del tráfico se queda bloqueado, haciendo que no podamos movilizarnos.</p>
+  <br>
+    <p style="font-size: large;">Que triste historia, ¿no crees?, te brindaré la forma de prevenir este tipo de ataque y que algo así no te suceda.</p>
+  <br><p>Para prevenir DDoS hay que armar defensa en capas, como si fuéramos una cebolla, primero pon CDN + WAF en el borde para offload y filtrado capa 7, tenemos baselines y alertas con NetFlow,sFlow y métricas de load balancer para detectar picos raros, y usamos APM para saber si el origen del problema es un endpoint caro. El SIEM te ayuda a correlacionar señales y PagerDuty + runbooks te permiten reaccionar rápido, si el ataque escala, activamos el scrubbing provider que tengas contratado. Y por último complementamos todo eso con pruebas controladas, acuerdos con ISPs y playbooks claros para no improvisar cuando la carretera se llena y así salir sobre ruedas. 
+</p>
+<br>
+    <button class="close-btn" onclick="cerrarModal('modal1')">Cerrar</button>
+  </div>
+</div>
+
+<div class="overlay" id="modal2">
+  <div class="modal">
+    <h2>¿Acaso me vas a vacunar? JAJA, olvídalo, es una broma.</h2>
+    <p style="font-size: large;">¿Por qué suena tan curioso este nombre?, a mi me da intriga de entender el SQL Injection.</p> <br><pre style="font-size: large; color: #50c878; font-weight: bolder;">¿Qué es?
+</pre>
+<br>
+  <p>El SQLi es una vulnerabilidad en aplicaciones que permiten que datos de entrada alteren la estructura de una consulta SQL, lo que puede llevar a exfiltración, modificación o borrado de datos, suena un poco técnico, y pues sí, aquí vamos aumentando de nivel querido amigo.</p>
+  <br>
+  <pre style="font-size: large; color: #50c878; font-weight: bolder;">¿En qué consiste?</pre>
+  <br><img src="../NERVAS_web/images/fnaf.jpg" style="width: 500px;">
+<br><p style="font-size: large;">Para entender la historia de Five Night's at Freddy's, espera espera, así no era, JAJA.</p>
+  <br><p>Para entender este ataque, nos vamos a transformar en empleados de un restaurante, en este caso, seremos meseros, para realizar peticiones al chef, nuestros invitados y hambrientas personas, escriben lo que desean en un papel, si nosotros no revisamos estas peticiones y casualmente una de estas peticiones era “y abrir la caja fuerte”, nuestro chef puede realizar lo inimaginable, trayendo consigo grandes problemas al restaurante y posiblemente tu y yo estaríamos despedidos.</p> 
+  <br>
+  <p>El SQLi es básicamente eso, la aplicación envía texto del usuario, el que realiza la petición  a la base de datos como si fuera una instrucción, y la base ejecuta cosas que no corresponden o no debería, logrando cosas como extraer información.</p>
+  <br>
+  <pre style="font-size: large; color: #50c878; font-weight: bolder;">Herramientas</pre>
+  <br>
+  <p><li style="margin-left: 50px;">ORM bien usados: esta herramienta que suena como gusano, sirve para separar datos de instrucciones.</li>
+<li style="margin-left: 50px;">SAST: detectan concatenaciones peligrosas en el código.
+<li style="margin-left: 50px;">DB proxies y DLP: revisan y limitan consultas que intentan sacar demasiada info.</li>  <br>
+  <pre style="font-size: large; color: #50c878; font-weight: bolder;">Ejemplo Mundial</pre>
+  <br><p>Tik Tok, eh digo,TalkTalk, era el año 2015 y una empresa británica sufrió una brecha grave por fallos en su web (entre ellos vectores similares a SQLi) y miles de clientes vieron su información comprometida. La lección de esta historia es que un pedido mal hecho en el restaurante, nos puede costar millones amigo mío.</p>
+  <br>
+  <pre style="font-size: large; color: #50c878; font-weight: bolder;">Cómo prevenir</pre>
+  <br><p>Para lograr combatir este ataque sigiloso, podríamos definirlo como cuestión de disciplina, lo primero es codificar con prepared statements/ORMs para que los datos del usuario no reescriban la consulta, metemos SAST en el pipeline para bloquear merges peligrosos y complementamos con DAST en staging para verificar endpoints. Limitamos permisos en la BD, ponemos DB proxies/firewalls y DLP para detectar exfiltraciones. Por último y no menos importante, implementamos paginación y caps por consulta para evitar dumps masivos y mantenemos playbooks para una respuesta más rápida.</p> 
+</p>
+<br>
+  <img src="../NERVAS_web/images/sqli.jpg" style="width: 500px;">
+<br>
+    <button class="close-btn" onclick="cerrarModal('modal2')">Cerrar</button>
+  </div>
+</div>
+
+<div class="overlay" id="modal4">
+  <div class="modal">
+    <h2>Rayos X o Superman, ¡no!, es cross site scripting llegando al lugar.</h2><br>
+    <pre style="font-size: large; color: #50c878; font-weight: bolder;">¿Qué es?</pre>
+<br>
+  <p>Para entenderlo de una forma sencilla pero compleja, el XSS es la situación donde una aplicación entrega contenido que puede ejecutar código (normalmente de JavaScript) en el navegador de otro usuario, debido a falta de escaping/sanitización en la salida, afectando así la seguridad del cliente, ten un pequeño ejemplo</p>  <br><pre style="font-size: large; color: #50c878; font-weight: bolder;">¿En qué consiste? </pre>
+<br><p>Recuerdas el bar famoso de la historia aquella, imagina que unas cuadras más adelante encontramos una plaza en donde existe un tablón donde cualquier ciudadano pueblerino que ande por ahí, pueda poner algún mensaje, llega otro pillo y pone un cartel con instrucciones diciendo lo siguiente, “Haz click aquí y ganarás dinero”, la gente, enganchada por el dinero, sigue esta instrucción y le ocurren cosas malas.</p>
+    <br><p>El XSS es un contenido malicioso que es inyectado en un sitio web legítimo, y cuando un usuario ingresa a este sitio, ese código corre en su navegador causando estragos.</p>
+<br>
+  <pre style="font-size: large; color: #50c878; font-weight: bolder;">Herramientas</pre>
+  <br>
+  <p><li style="margin-left: 50px;">SAST / DAST: son herramientas que detectan en código y en ejecución si tenemos puntos donde se inserta HTML/JS sin control.</li>
+    <li style="margin-left: 50px;">Sanitizers: librerías que “limpian” lo que los usuarios quieren pegar en el tablón para que no ejecute, como si fuesen los conserjes de la plaza.</li>
+    <li style="margin-left: 50px;">CSP & SRI: son políticas que le dicen al navegador “solo ejecuta scripts de estas fuentes y con integridad”, haciendo así que en nuestro tablón solo se puedan poner carteles autorizados.</li>
+    <li style="margin-left: 50px;">Frontend telemetry: detectan ejecuciones anómalas o errores en el cliente que pueden indicar explotación.</li>  <pre style="font-size: large; color: #50c878; font-weight: bolder;">Ejemplo Mundial</pre>
+  <br><p>Samy Worm, la linda Samy,  caso MySpace en 2005, fue un XSS almacenado  que se propagó en MySpace porque la gente podía poner HTML en su perfil, Samy, el gusano se replicó y afectó millones de cuentas.</p>  <br>
+  <pre style="font-size: large; color: #50c878; font-weight: bolder;">Cómo prevenir</pre>
+  <br><p>Para evitar a Samy, pobrecita ella es muy linda, o evitar un XSS, escapa siempre la salida y usa sanitizers, los queridos conserjes, cuando aceptamos HTML, tienes que incorporar SAST/DAST y linters para que el pipeline salte cuando haya uso de APIs peligrosas, y aplica CSP + SRI para limitar scripts externos. Asegurá cookies con HttpOnly/Secure/SameSite para reducir impacto si algo falla, monitorea con frontend telemetry y ten un plan para sanear contenido legacy. Juntando estas piezas logramos mantener nuestro tablón limpio y controlamos la plaza, haciendo que los pillos no causen nuestros estragos, nos convertimos en la ¡fuerza policial de la Muni!.</p>
+</p><br>
+<img src="../NERVAS_web/images/xssmeme.jpg" style="width: 500px; text-align: center !important;">
+<br>
+    <button class="close-btn" onclick="cerrarModal('modal4')">Cerrar</button>
+  </div>
+</div>
+
+
+<script>
+  function abrirModal(id) {
+    document.getElementById(id).style.display = 'flex';
+  }
+
+  function cerrarModal(id) {
+    document.getElementById(id).style.display = 'none';
+  }
+
+  // Cerrar al hacer clic fuera del modal
+  document.querySelectorAll('.overlay').forEach(overlay => {
+    overlay.addEventListener('click', function(e) {
+      if (e.target === overlay) {
+        overlay.style.display = 'none';
+      }
+    });
+  });
+  </script>
   <footer>
     <p style="text-align: center; font-weight: bold;"> NervaS EXPOTEC 2025</p>
     <p style="text-align: center;">&copy; 2024 NervaS. Todos los derechos reservados.</p>
 
 </footer>
-    </footer>
+</body>
+
+</html>
