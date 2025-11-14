@@ -565,6 +565,12 @@
         .dot:hover {
             background: #8bc34a;
         }
+        .card-carousel{
+            height: 350px;
+        }
+        .card{
+            height: 300px;
+        }
 
         /* Cursos grid estilo NetAcad */
         .courses-grid {
